@@ -1,0 +1,30 @@
+{
+  "name": "sool-jari",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.13.5",
+    "@strapi/plugin-i18n": "4.13.5",
+    "@strapi/plugin-users-permissions": "4.13.5",
+    "@strapi/strapi": "4.13.5",
+    "better-sqlite3": "8.5.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "bd9f1774-9265-4ea3-833f-d267e5273d56"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

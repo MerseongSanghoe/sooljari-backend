@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alcohols",
+  "info": {
+    "singularName": "alcohol",
+    "pluralName": "alcohols",
+    "displayName": "Alcohol",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "decimal"
+    },
+    "maker": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::maker.maker",
+      "inversedBy": "alcohol"
+    },
+    "alc_serach_keys": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alc-serach-key.alc-serach-key",
+      "mappedBy": "alcohol"
+    },
+    "category": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "alcohol"
+    }
+  }
+}

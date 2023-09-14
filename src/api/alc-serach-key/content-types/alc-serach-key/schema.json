@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alc_serach_keys",
+  "info": {
+    "singularName": "alc-serach-key",
+    "pluralName": "alc-serach-keys",
+    "displayName": "AlcSerachKey"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "alcohol": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::alcohol.alcohol",
+      "inversedBy": "alc_serach_keys"
+    }
+  }
+}

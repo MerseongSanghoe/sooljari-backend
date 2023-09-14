@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "alcohol": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::alcohol.alcohol",
+      "mappedBy": "tags"
+    }
+  }
+}
