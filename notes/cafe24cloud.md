@@ -97,7 +97,7 @@ sudo vi /etc/fstab
 
 ```sh
 # strapi development 환경에서 실행
-npm run develop
+npm run dev
 
 # http://localhost:1337/admin
 ```

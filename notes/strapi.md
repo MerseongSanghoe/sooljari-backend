@@ -30,3 +30,13 @@ https://docs.strapi.io/dev-docs/quick-start#_1-install-strapi-and-create-a-new-p
 https://docs.strapi.io/dev-docs/plugins/documentation
 
 이후 실행부터는 /documentation 을 통해 api 문서에 접근 가능하다
+
+## ERD 플러그인
+
+https://market.strapi.io/plugins/strapi-plugin-entity-relationship-chart
+
+https://market.strapi.io/plugins/strapi-content-type-explorer
+
+아래쪽게 더 깔끔하게 낫다
+
+플러그인 설치때마다 `npx strapi build`를 실행해줘야 어드민 페이지에 적용된다.
