@@ -4,7 +4,8 @@
   "info": {
     "singularName": "alc-serach-key",
     "pluralName": "alc-serach-keys",
-    "displayName": "AlcSerachKey"
+    "displayName": "AlcSearchKey",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
