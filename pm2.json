@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "sooljari-strapi",
+            "script": "npm",
+            "args": "run dev"
+        }
+    ]
+}

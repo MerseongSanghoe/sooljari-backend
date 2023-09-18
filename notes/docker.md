@@ -61,3 +61,13 @@ https://doitnow-man.tistory.com/entry/8-Dockerfile-%EA%B3%BC-Docker-composeyml
 https://docs.strapi.io/dev-docs/installation/docker
 
 일단 임시로 하기 위해 조금의 수정을 거침 (DB 결정 전까지 sqlite 사용)
+
+# 안됨
+
+왜안되는지 아직도 모르겠음
+
+이미지 빌드할때 npm install 부분에서 엄청난 시간이 소요됨
+
+node_modules를 가져오든 해서 넘어가면 이번엔 빌드 후 실행이 안됨 (아마 os환경 문제인듯)
+
+이거 맞춰주느니 pm2같은거 써서 하는게 속편할거같음. -> pm2.json
