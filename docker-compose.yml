@@ -4,7 +4,6 @@ services:
     container_name: sooljari
     build: .
     image: sooljari:latest
-    restart: unless-stopped
     env_file: .env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
@@ -16,14 +15,8 @@ services:
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       NODE_ENV: ${NODE_ENV}
+    command: npm run dev
     volumes:
-      - ./config:/opt/app/config
-      - ./src:/opt/app/src
-      - ./package.json:/opt/package.json
-      - ./package-lock.json:/opt/package-lock.json
-
-      - ./.env:/opt/app/.env
-      - ./public/uploads:/opt/app/public/uploads
-      - ./.tmp:/opt/app/.tmp
+      - ./.tmp:/srv/app/.tmp
     ports:
       - '1337:1337'
