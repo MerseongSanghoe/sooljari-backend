@@ -1,0 +1,17 @@
+{
+  "name": "import_codes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "import_xlsx.js",
+  "scripts": {
+    "start": "node import_xlsx.js"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.3.0",
+    "xlsx": "^0.18.5"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC"
+}

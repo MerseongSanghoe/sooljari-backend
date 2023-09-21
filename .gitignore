@@ -113,3 +113,5 @@ dist
 build
 .strapi-updater.json
 .db
+*.xlsx
+import_codes/login.txt
