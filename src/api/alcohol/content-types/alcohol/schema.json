@@ -38,6 +38,9 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "alcohol"
+    },
+    "explanation": {
+      "type": "text"
     }
   }
 }

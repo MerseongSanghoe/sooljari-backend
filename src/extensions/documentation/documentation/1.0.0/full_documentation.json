@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-17T10:48:33.583Z"
+    "x-generation-date": "2023-09-21T02:48:20.221Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -711,6 +711,9 @@
                           }
                         }
                       },
+                      "explanation": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -890,6 +893,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "explanation": {
+                "type": "string"
               }
             }
           }
@@ -1444,6 +1450,9 @@
                                         }
                                       }
                                     },
+                                    "explanation": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -1591,6 +1600,9 @@
                 }
               }
             }
+          },
+          "explanation": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -2291,6 +2303,9 @@
                               }
                             }
                           }
+                        },
+                        "explanation": {
+                          "type": "string"
                         },
                         "createdAt": {
                           "type": "string",
@@ -3062,6 +3077,9 @@
                               }
                             }
                           }
+                        },
+                        "explanation": {
+                          "type": "string"
                         },
                         "createdAt": {
                           "type": "string",
