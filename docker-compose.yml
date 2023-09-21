@@ -14,4 +14,4 @@ services:
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
       MYSQL_DATABASE: ${DATABASE_NAME}
     volumes:
-      - ./db:/var/lib/mysql
+      - ./.db:/var/lib/mysql
