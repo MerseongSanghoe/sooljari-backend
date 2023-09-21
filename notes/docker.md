@@ -62,12 +62,38 @@ https://docs.strapi.io/dev-docs/installation/docker
 
 일단 임시로 하기 위해 조금의 수정을 거침 (DB 결정 전까지 sqlite 사용)
 
-# 안됨
+## 안됨
 
 왜안되는지 아직도 모르겠음
 
 이미지 빌드할때 npm install 부분에서 엄청난 시간이 소요됨
 
-node_modules를 가져오든 해서 넘어가면 이번엔 빌드 후 실행이 안됨 (아마 os환경 문제인듯)
+- yarn 사용 -> build에서 멈춤
+- node_modules를 가져오든 해서 넘어가면 -> 이번엔 빌드 후 실행이 안됨 (아마 os환경 문제인듯)
+- bun 사용 -> install은 제일 빨랐으나 build에서 멈춤
 
 이거 맞춰주느니 pm2같은거 써서 하는게 속편할거같음. -> pm2.json
+
+## mysql 구동을 위한 docker
+
+하지만 DB같은경우는 docker를 사용해 구동하는게 편하다  
+mysql의 이미지를 사용해 간단하게 만들 수 있다
+
+/docker-compose.yml 확인
+
+- 구동시 주의사항
+  /.db 폴더를 만든 뒤 진행할것 -> /.db 안에 mysql 데이터가 다 들어가서 컨테이너 관계없이 유지됨
+
+```sh
+# 백그라운드에서 도커로 실행
+docker compose up -d
+
+# 사용한 컨테이너와 이미지 등 정지 및 제거
+docker compose down
+```
+
+> - 추가로 알게된점  
+>   폴더명 앞에 '.'을 안붙이면 strapi develop 굴러가면서 폴더를 추적함  
+>   -> 변경사항이 있을경우 재시작함  
+>   -> 폴더명 db로 했더니 strapi에서 추적하려고 하다가 docker와 권한 충돌이 남  
+>   -> .db로 변경했더니 추적을 안해서 잘굴러감
