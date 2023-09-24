@@ -69,6 +69,10 @@ sudo service nginx status
 
 ### 4. strapi 가져와서 켜기
 
+여기서부터는 [server_README.md](./server_README.md)에도 유사한 내용이 적혀있으니 참고
+
+아래의 내용은 완전 처음에 cafe24 클라우드를 사용하며 세팅한 것이므로, 현재의 상황과는 다를 수 있음
+
 ```sh
 git clone <git_addr>
 
@@ -130,3 +134,9 @@ server {
 ### 5. sqlite DB의 직접 접근을 위한 방안
 
 #4 이슈 참고 ([링크](https://github.com/MerseongSanghoe/sooljari-backend/issues/4))
+
+허나, 협상을 통해 그냥 mysql을 사용하기로 결정
+
+관련 정보는 [mysql.md](./mysql.md) 참고
+
+포트를 통한 sql 직접 접근은 nginx와 cafe24 cloud에서 직접 열어줘야함 -> 추후 처리 및 작성 예정
