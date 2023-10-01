@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "tags",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
+    "singularName": "tag",
+    "pluralName": "tags",
     "displayName": "Tag",
     "description": ""
   },
@@ -13,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "alcohol": {
       "type": "relation",

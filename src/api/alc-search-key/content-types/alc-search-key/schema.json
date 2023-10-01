@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "alc_serach_keys",
+  "collectionName": "alc_search_keys",
   "info": {
-    "singularName": "alc-serach-key",
-    "pluralName": "alc-serach-keys",
+    "singularName": "alc-search-key",
+    "pluralName": "alc-search-keys",
     "displayName": "AlcSearchKey",
     "description": ""
   },
@@ -12,14 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "key": {
-      "type": "string"
+    "search_key": {
+      "type": "string",
+      "required": true
     },
     "alcohol": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::alcohol.alcohol",
-      "inversedBy": "alc_serach_keys"
+      "inversedBy": "alc_search_keys"
     }
   }
 }

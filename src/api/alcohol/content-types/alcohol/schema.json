@@ -13,10 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "degree": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "maker": {
       "type": "relation",
@@ -24,10 +27,10 @@
       "target": "api::maker.maker",
       "inversedBy": "alcohol"
     },
-    "alc_serach_keys": {
+    "alc_search_keys": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::alc-serach-key.alc-serach-key",
+      "target": "api::alc-search-key.alc-search-key",
       "mappedBy": "alcohol"
     },
     "category": {
@@ -36,7 +39,7 @@
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::category.category",
+      "target": "api::tag.tag",
       "inversedBy": "alcohol"
     },
     "explanation": {
