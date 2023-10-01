@@ -18,9 +18,8 @@
     },
     "alcohol": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::alcohol.alcohol",
-      "inversedBy": "alc_search_keys"
+      "relation": "oneToMany",
+      "target": "api::alcohol.alcohol"
     }
   }
 }

@@ -27,12 +27,6 @@
       "target": "api::maker.maker",
       "inversedBy": "alcohol"
     },
-    "alc_search_keys": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::alc-search-key.alc-search-key",
-      "mappedBy": "alcohol"
-    },
     "category": {
       "type": "string"
     },
