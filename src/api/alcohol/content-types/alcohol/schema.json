@@ -44,6 +44,15 @@
     },
     "explanation": {
       "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "store_link": {
+      "type": "string"
+    },
+    "sub_link": {
+      "type": "string"
     }
   }
 }
