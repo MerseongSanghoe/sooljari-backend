@@ -5,6 +5,15 @@ docker를 통해 설치했으며, 이미지 버전은 latest로 설정함
 
 root 비밀번호 등은 모두 .env 파일을 통해 설정됩니다. .env.example 참고
 
+## docker 돌아가는 중에 들어가는 법
+
+```sh
+docker exec -it <container-id> /bin/bash
+
+mysql -u root -p
+# root 패스워드 입력
+```
+
 ## 초기 설정
 
 아래의 ${} 내부는 모두 .env의 설정에서 가져오면 됩니다
@@ -13,6 +22,8 @@ root 비밀번호 등은 모두 .env 파일을 통해 설정됩니다. .env.exam
 
 ```sql
 USE mysql;
+SELECT user FROM user;
+
 CREATE USER '${DATABASE_USERNAME}'@'localhost' IDENTIFIED BY '${DATABASE_PASSWORD}';
 GRANT ALL PRIVILEGES ON ${DATABASE_NAME}.* TO '${DATABASE_USERNAME}'@'localhost';
 ```
