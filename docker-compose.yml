@@ -15,3 +15,10 @@ services:
       MYSQL_DATABASE: ${DATABASE_NAME}
     volumes:
       - ./.db:/var/lib/mysql
+    networks:
+      - backend
+
+networks:
+  backend:
+    external: true
+    

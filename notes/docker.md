@@ -82,9 +82,13 @@ mysql의 이미지를 사용해 간단하게 만들 수 있다
 /docker-compose.yml 확인
 
 - 구동시 주의사항
-  /.db 폴더를 만든 뒤 진행할것 -> /.db 안에 mysql 데이터가 다 들어가서 컨테이너 관계없이 유지됨
+  /.db 폴더를 만든 뒤 진행할것 -> /.db 안에 mysql 데이터가 다 들어가서 컨테이너 관계없이 유지됨  
+  backend라는 네트워크를 반드시 만들고 할 것 -> 다른 마이크로 서비스와 연결
 
 ```sh
+# 초기 실행시, 반드시 backend라는 네트워크를 만들어줘야함
+docker network create backend
+
 # 백그라운드에서 도커로 실행
 docker compose up -d
 
