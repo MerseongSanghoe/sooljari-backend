@@ -101,3 +101,20 @@ docker compose down
 >   -> 변경사항이 있을경우 재시작함  
 >   -> 폴더명 db로 했더니 strapi에서 추적하려고 하다가 docker와 권한 충돌이 남  
 >   -> .db로 변경했더니 추적을 안해서 잘굴러감
+
+## docker network 관련
+
+바로 위의 구동에 backend라는 네트워크를 만들어줘야 한다고 적어뒀는데 그 이야기
+
+컨테이너간의 원활한 통신을 위해 도커 네트워크를 사용해야 한다. 그런데 보통이야 docker compose 파일 안에 넣겠지만, 지금은 docker compose 파일들이 각각 분리된 상황이므로, 따로 만들어주고 external로 불러오는 방식을 채택함
+
+```sh
+# 현재 존재하는 도커 네트워크들을 확인
+docker network ls
+
+# backend라는 네트워크를 생성함 (브릿지 모드)
+docker network create backend
+
+# 네트워크 상태 확인
+docker network inspect backend
+```
