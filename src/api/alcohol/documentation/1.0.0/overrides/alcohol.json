@@ -1,0 +1,17 @@
+{
+    "paths": {
+        "/alcohols/{id}": {
+            "get": {
+                "responses": { 
+                    "200": {
+                        "description": "MUST CHECK! response structure changed",
+                        "externalDocs": {
+                          "description": "MUST CHECK! response structure changed",
+                          "url": "https://github.com/MerseongSanghoe/sooljari-backend/blob/main/notes/customized-api.md#get-apialcoholsid"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -130,3 +130,11 @@ const res = await fetch(`${ip}api/makers`, {
 다양한 요청은 서버/documentation/ 페이지에서 볼 수 있다.
 
 Swagger UI에 익숙하지 않다면 화이팅
+
+## api customization
+
+[alcohol.js](/src/api/alcohol/controllers/alcohol.js)
+
+기본으로 사용되는 findOne의 형태를 바꾸었다.
+
+https://docs.strapi.io/dev-docs/backend-customization/controllers
