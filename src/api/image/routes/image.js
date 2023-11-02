@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * tag router
+ * image router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::tag.tag');
+module.exports = createCoreRouter('api::image.image');

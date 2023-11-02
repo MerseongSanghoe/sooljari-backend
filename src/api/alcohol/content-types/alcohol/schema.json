@@ -30,12 +30,6 @@
     "category": {
       "type": "string"
     },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "alcohol"
-    },
     "explanation": {
       "type": "text"
     },
@@ -47,6 +41,11 @@
     },
     "sub_link": {
       "type": "string"
+    },
+    "images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::image.image"
     }
   }
 }
