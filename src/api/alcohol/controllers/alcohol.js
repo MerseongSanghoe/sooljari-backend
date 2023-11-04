@@ -1,10 +1,9 @@
 'use strict';
 
+const axios = require("axios");
 /**
  * alcohol controller
  */
-
-const axios = require("axios");
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::alcohol.alcohol', ({strapi}) => ({
@@ -30,6 +29,14 @@ module.exports = createCoreController('api::alcohol.alcohol', ({strapi}) => ({
                 id: ele.id,
                 ...ele.attributes,
             }));
+
+            // link tags
+            try {
+                const tagsRes = await axios.get(`${process.env.TAG_API_HOST}/byalc/${toReturn.id}`);
+                toReturn.tags = tagsRes.data.data;
+            } catch (err) {
+                toReturn.tags = [];
+            }
             
             return toReturn;
         } 
