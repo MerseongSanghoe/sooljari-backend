@@ -115,3 +115,6 @@ build
 .db
 *.xlsx
 import_codes/login.txt
+
+# generated on every run
+src/extensions/documentation/documentation/1.0.0/full_documentation.json
