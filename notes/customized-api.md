@@ -16,9 +16,7 @@ id 355의 주류 정보를 가져오는 경우,
 
 로그인 불필요 (추후 수정할 수 있음)
 
-```
-GET /api/alcohols/355
-```
+사용예시: `GET /api/alcohols/355`
 
 - Response
 
