@@ -69,7 +69,7 @@ imageURL에 해당하는 이미지를 가져옵니다.
 
 TOSEARCH query를 이용해 주류명으로 검색합니다.
 
-[세부 명세](https://github.com/MerseongSanghoe/sooljari-search-engine/blob/main/docs/searchAPI/v0.0.3.md#search-api-v003)
+[세부 명세](https://github.com/MerseongSanghoe/sooljari-search-engine/blob/main/docs/searchAPI/latest.md#search-api-v003)
 
 ## 자동 완성
 
@@ -77,7 +77,7 @@ TOSEARCH query를 이용해 주류명으로 검색합니다.
 
 TOSEARCH query에 해당하는 자동완성 키들을 가져옵니다.
 
-[세부 명세](https://github.com/MerseongSanghoe/sooljari-search-engine/blob/main/docs/autocompletionAPI/v0.0.4.md)
+[세부 명세](https://github.com/MerseongSanghoe/sooljari-search-engine/blob/main/docs/autocompletionAPI/latest.md)
 
 # 태그
 
