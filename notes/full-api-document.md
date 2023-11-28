@@ -101,3 +101,23 @@ tagTitle에 해당하는 태그와 연결된 주류들을 가져옵니다.
 (tagTitle: string)
 
 [세부 명세](https://github.com/MerseongSanghoe/sooljari-tag-service/blob/main/notes/tag-api-docs.md#get-tagbytagtagtitle)
+
+# 리뷰 (술 노트)
+
+## 노트 작성
+
+`POST /api/review`
+
+[세부 명세](https://github.com/MerseongSanghoe/sooljari-review-service/blob/main/note/api.md#post-reviews)
+
+## 주류 ID에 관련된 리뷰들 가져오기
+
+`GET /api/review/byalc/:id`
+
+[세부 명세](https://github.com/MerseongSanghoe/sooljari-review-service/blob/main/note/api.md#get-reviewsbyalcid)
+
+## 유저 ID로 작성한 리뷰들 가져오기
+
+`GET /api/review/bywrt/:id`
+
+[세부 명세](https://github.com/MerseongSanghoe/sooljari-review-service/blob/main/note/api.md#get-reviewsbywrtid)
